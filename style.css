@@ -1,0 +1,200 @@
+/*!
+Theme Name: WordWiki
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: A Wiki theme for WordPress
+Version: 1.1.0
+*/
+
+/* a retirer du style.css & header.php */
+#environment {
+	position: fixed;
+	z-index: 9999;
+	left: 1%;
+	top: 3%;
+	color: #fff;
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: 11px;
+	border-radius: 3px;
+	padding: 2px 6px;
+	-webkit-animation-name: environment;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+}
+
+@keyframes environment {
+	0% {
+		background: #ff7600;
+	}
+	50% {
+		background: #ff2300;
+	}
+	100% {
+		background: #ff7600;
+	}
+}
+
+/*
+ * FONTS
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/*
+ * GLOBAL
+*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: rgba(9,9,16,.7);
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+input {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+	display: flex;
+}
+
+/*
+ * SYNTAX
+*/
+h1, h2, h3, h4 {
+	color: #090910;
+}
+
+p {
+	font-size: 15px;
+	line-height: 21px;
+	margin-bottom: 2em;
+}
+
+.wp-block-image {
+	margin: 25px 0;
+}
+
+pre {
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
+}
+
+.contentWiki a {
+	color: #007eff;
+}
+
+hr.wp-block-separator {
+	border: 0;
+	height: 1px;
+	background: #e6e6e6;
+}
+
+code {
+	background: #ededf1;
+	border-radius: 3px;
+	padding: 1px 3px;
+}
+
+pre {
+	background: #ededf1;
+	border-radius: 3px;
+	padding: 1px 3px;
+}
+
+pre code {
+	background: transparent;
+}
+
+.wp-block-image figcaption {
+	font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*
+ * CONTENT
+ */
+.contentWiki {
+	max-width: 42em;
+	margin: 80px;
+	margin-left: 35%;
+	padding-left: 5%;
+	width: 100%;
+}
+
+h1.entry-title {
+	font-size: 32px;
+	border-bottom: 2px solid #E6ECF1;
+  margin-bottom: 32px;
+	padding: 40px 0;
+	margin-top: 0;
+	width: 100%;
+}
+
+/*
+ * HEADER
+ */
+aside {
+	position: fixed;
+	padding-top: 80px;
+	background-color: #F7F7FB;
+	width: 15%;
+	padding-left: 20%;
+	height: 100vh;
+}
+
+aside nav {
+	margin-top: 30px;
+}
+
+aside ul {
+	list-style: none;
+	padding: 0;
+}
+
+aside ul li a {
+	display: block;
+	padding: 10px 24px 10px 16px;
+}
+
+aside ul a[href] {
+	color: #090910;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: initial;
+	font-size: 14px;
+	letter-spacing: normal;
+}
+
+aside ul a[href]:hover {
+	background: #2d336312;
+}
+
+aside ul li a[aria-current] {
+	background: #2d336312;
+	color: #007eff;
+}
+
+aside img.custom-logo {
+	max-height: 54px;
+	width: auto;
+}
+
+aside #burgerMenu {
+	display: none;
+}
+
+/* we style the category items */
+aside ul li.menu-item-object-category {
+	text-transform: uppercase;
+	color: #b3b3b3;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
